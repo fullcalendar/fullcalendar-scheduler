@@ -36,11 +36,33 @@ export default createPlugin({
   optionChangeHandlers
 })
 
-export { default as ResourceDayHeader } from './common/ResourceDayHeader'
-export { VResourceJoiner, AbstractResourceDayTable, ResourceDayTable, DayResourceTable, VResourceSplitter } from './common/resource-day-table'
-export { Resource, ResourceHash } from './structs/resource'
-export { ResourceViewProps } from './View'
-export { flattenResources, Group, isGroupsEqual, GroupNode, ResourceNode, buildRowNodes, buildResourceFields } from './common/resource-hierarchy'
+export { default as ResourceDayHeader, ResourceDayHeaderProps } from './common/ResourceDayHeader'
+export {
+  VResourceJoiner, AbstractResourceDayTable, ResourceDayTable, DayResourceTable, VResourceSplitter,
+  ResourceDayTableCell, ResourceIndex, VResourceProps
+} from './common/resource-day-table'
+export { Resource, ResourceHash, ResourceInput, getPublicId, parseResource } from './structs/resource'
+export { ResourceViewProps, ResourceDataAdder, ResourceEventConfigAdder, transformIsDraggable } from './View'
+export {
+  flattenResources, Group, isGroupsEqual, GroupNode, ResourceNode, buildRowNodes, buildResourceFields
+} from './common/resource-hierarchy'
 export { buildResourceTextFunc } from './common/resource-rendering'
 export { default as ResourceApi } from './api/ResourceApi'
-export { default as ResourceSplitter } from './common/ResourceSplitter'
+export { default as ResourceSplitter, SplittableResourceProps } from './common/ResourceSplitter'
+export { ResourceEntityExpansions, reduceResourceEntityExpansions } from './reducers/resourceEntityExpansions'
+export { default as executeResourceSourceAction } from './reducers/resourceSource'
+export { default as executeResourceStoreAction } from './reducers/resourceStore'
+export { ResourceAction } from './reducers/resources'
+export { ResourceFunc } from './resource-sources/resource-func'
+export { parseEventDef } from './structs/event'
+export {
+  ExtendedResourceSourceInput, ResourceFetcher, ResourceSource, ResourceSourceDef, ResourceSourceError,
+  ResourceSourceInput, doesSourceIgnoreRange, getResourceSourceDef, parseResourceSource, registerResourceSourceDef
+} from './structs/resource-source'
+export { transformDatePoint, transformDateSpan } from './Calendar'
+export { transformDateSelectionJoin } from './DateSelecting'
+export { applyEventDefMutation, computeResourceEditable, massageEventDragMutation, transformEventDrop } from './EventDragging'
+export { transformEventResizeJoin } from './EventResizing'
+export { transformExternalDef } from './ExternalElementDragging'
+export { injectLicenseWarning } from './license'
+export { isPropsValidWithResources } from './validation'

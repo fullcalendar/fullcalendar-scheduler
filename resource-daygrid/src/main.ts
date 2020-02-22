@@ -4,7 +4,7 @@ import DayGridPlugin from '@fullcalendar/daygrid'
 import ResourceDayGridView from './ResourceDayGridView'
 
 export { ResourceDayGridView }
-export { default as ResourceDayGrid } from './ResourceDayGrid'
+export { default as ResourceDayGrid, ResourceDayGridProps } from './ResourceDayGrid'
 
 export default createPlugin({
   deps: [ ResourceCommonPlugin, DayGridPlugin ],

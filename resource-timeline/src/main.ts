@@ -4,6 +4,13 @@ import ResourceCommonPlugin from '@fullcalendar/resource-common'
 import ResourceTimelineView from './ResourceTimelineView'
 
 export { ResourceTimelineView }
+export { default as GroupRow, GroupRowProps } from './GroupRow'
+export { clearExpanderIcon, updateExpanderIcon, updateTrResourceId } from './render-utils'
+export { default as ResourceRow, ResourceRowProps } from './ResourceRow'
+export { default as Row } from './Row'
+export { default as Spreadsheet, SpreadsheetProps } from './Spreadsheet'
+export { default as SpreadsheetHeader, SpreadsheetHeaderProps } from './SpreadsheetHeader'
+export { default as SpreadsheetRow, SpreadsheetRowProps } from './SpreadsheetRow'
 
 export default createPlugin({
   deps: [ ResourceCommonPlugin, TimelinePlugin ],

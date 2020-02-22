@@ -4,7 +4,7 @@ import TimeGridPlugin from '@fullcalendar/timegrid'
 import ResourceTimeGridView from './ResourceTimeGridView'
 
 export { ResourceTimeGridView }
-export { default as ResourceTimeGrid } from './ResourceTimeGrid'
+export { default as ResourceTimeGrid, ResourceTimeGridProps } from './ResourceTimeGrid'
 
 export default createPlugin({
   deps: [ ResourceCommonPlugin, TimeGridPlugin ],
