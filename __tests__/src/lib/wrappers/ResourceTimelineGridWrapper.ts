@@ -15,6 +15,24 @@ export class ResourceTimelineGridWrapper {
     return this.base.el
   }
 
+  rightClick(resourceId: string, date) {
+    let point = this.getPoint(resourceId, date)
+
+    if ($(this.el).css('direction') === 'ltr') {
+      point.left += 1
+    } else {
+      point.left -= 1
+    }
+
+    $.simulateByPoint('contextmenu', {
+      button: 2,
+      point,
+      clientX: point.left,
+      clientY: point.top,
+    })
+    return new Promise((resolve) => { resolve() })
+  }
+
   click(resourceId: string, date) { // not JUST a date. a resource too
     let point = this.getPoint(resourceId, date)
 

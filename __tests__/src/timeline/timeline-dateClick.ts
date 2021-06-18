@@ -84,6 +84,25 @@ describe('timeline dateClick', () => {
                 done()
               })
             })
+
+            it('reports right click on a resource', (done) => {
+              let dateClickCalled = false
+              let calendar = initCalendar({
+                dateClick(arg) {
+                  dateClickCalled = true
+                  expect(arg.date).toEqualDate(tz.parseDate('2015-11-28T04:30:00'))
+                  expect(typeof arg.jsEvent).toBe('object')
+                  expect(typeof arg.view).toBe('object')
+                  expect(arg.resource.id).toBe('b')
+                },
+              })
+
+              let timelineGrid = new ResourceTimelineViewWrapper(calendar).timelineGrid
+              timelineGrid.rightClick('b', '2015-11-28T04:30:00').then(() => {
+                expect(dateClickCalled).toBe(true)
+                done()
+              })
+            })
           })
         })
 
