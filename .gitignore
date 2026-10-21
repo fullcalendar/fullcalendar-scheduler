@@ -1,6 +1,7 @@
 
 # Package manager
 /node_modules
+.pnpm-store/
 
 # Typescript
 *.tsbuildinfo
