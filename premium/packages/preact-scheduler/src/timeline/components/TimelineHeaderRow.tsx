@@ -39,9 +39,15 @@ export class TimelineHeaderRow extends BaseComponent<TimelineHeaderRowProps, Tim
   state = {} as TimelineHeaderRowState
 
   // refs
+  // Remembers the widths of labels that virtualization has unmounted, so they still count toward
+  // the slot width. Otherwise, slot width would depend on which labels are mounted, while which
+  // labels are mounted depends on slot width. A widest label that only fits within the virtualized
+  // window at narrower slots would widen the slots, unmount, narrow them, and mount again, forever.
+  // A remembered width goes stale if the label's content changes while it's unmounted, such as with
+  // a locale change, and slots stay too wide until it scrolls back into view.
   private innerWidthRefMap = new RefMap<string, number>(() => {
     afterSize(this.handleInnerWidths)
-  })
+  }, /* ignoreDeletes = */ true)
   private innerHeightRefMap = new RefMap<string, number>(() => {
     afterSize(this.handleInnerHeights)
   })
@@ -115,12 +121,18 @@ export class TimelineHeaderRow extends BaseComponent<TimelineHeaderRowProps, Tim
   }
 
   handleInnerWidths = () => {
-    if (this._isUnmounting) return
+    if (this._isUnmounting) {
+      return
+    }
     const innerWidthMap = this.innerWidthRefMap.current
     let max: number | null = null
 
-    for (const innerWidth of innerWidthMap.values()) {
-      max = Math.max(max || 0, innerWidth)
+    // Not all of the map's values. See innerWidthRefMap: it also retains labels of prior date ranges
+    for (const cell of this.props.cells) {
+      const innerWidth = innerWidthMap.get(cell.key)
+      if (innerWidth != null) {
+        max = Math.max(max || 0, innerWidth)
+      }
     }
 
     // TODO: ensure not equal?
