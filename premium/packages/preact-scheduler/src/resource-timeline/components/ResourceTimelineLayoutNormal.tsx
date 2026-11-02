@@ -146,22 +146,42 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
 
   private _isUnmounting: boolean
 
+  // A row is as tall as its taller cell, so a cell's change in height is not the row's. An empty
+  // lane, for example, is much shorter than its row, and has no effect on the row's height
+  handleSpreadsheetCellHeightChange = (val: number, key: string, oldVal: number | null) => {
+    const timeHeight = this.timeEntityInnerHeightMap.current.get(key) || 0
+
+    this.handleBodyRowHeightChange(
+      key,
+      Math.max(oldVal ?? defaultOwnCellHeight, timeHeight),
+      Math.max(val, timeHeight),
+    )
+  }
+
+  handleTimeCellHeightChange = (val: number, key: string, oldVal: number | null) => {
+    const spreadsheetHeight = this.dataGridEntityInnerHeightMap.current.get(key) ?? defaultOwnCellHeight
+
+    this.handleBodyRowHeightChange(
+      key,
+      Math.max(spreadsheetHeight, oldVal || 0),
+      Math.max(spreadsheetHeight, val),
+    )
+  }
+
   // This is a means to recompute row positioning when *HeightMaps change
-  handleBodyRowHeightChange = (val: any, key: any, oldVal: any) => {
+  handleBodyRowHeightChange = (key: string, oldHeight: number, newHeight: number) => {
     if (this._isUnmounting) return
 
     if (this.isScrolling) {
-      if (val != null) {
-        const scrollSlackDelta = (oldVal ?? defaultOwnCellHeight) - val
-        if (scrollSlackDelta) {
-          const topCoord = this.bodyTops.get(key)
-          // Live scroll position, because currentEntityScroll lags when the browser clamps the
-          // scroll after content shrinks, and its scroll event hasn't fired yet
-          if (topCoord != null && topCoord < this.bodyScroller.y) {
-            if (!getIsHeightAuto(this.context.options)) {
-              // console.log('DELTA', key, oldVal ?? defaultOwnCellHeight, '->', val)
-              this.scrollSlack += scrollSlackDelta
-            }
+      const scrollSlackDelta = oldHeight - newHeight
+      if (scrollSlackDelta) {
+        const topCoord = this.bodyTops.get(key)
+        // Live scroll position, because currentEntityScroll lags when the browser clamps the
+        // scroll after content shrinks, and its scroll event hasn't fired yet
+        if (topCoord != null && topCoord < this.bodyScroller.y) {
+          if (!getIsHeightAuto(this.context.options)) {
+            // console.log('DELTA', key, oldHeight, '->', newHeight)
+            this.scrollSlack += scrollSlackDelta
           }
         }
       }
@@ -201,8 +221,8 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
   // keyed by createEntityId
   // NOTE: ignoring deletes can cause memory issues if resources constantly change and have new keys
   // refactor in future. FWIW, TanStack Virtual doesn't garbage collect unnused dimensions either
-  private dataGridEntityInnerHeightMap = new RefMap<string, number>(this.handleBodyRowHeightChange, /* ignoreDeletes = */ true)
-  private timeEntityInnerHeightMap = new RefMap<string, number>(this.handleBodyRowHeightChange, /* ignoreDeletes = */ true)
+  private dataGridEntityInnerHeightMap = new RefMap<string, number>(this.handleSpreadsheetCellHeightChange, /* ignoreDeletes = */ true)
+  private timeEntityInnerHeightMap = new RefMap<string, number>(this.handleTimeCellHeightChange, /* ignoreDeletes = */ true)
 
   private bodyLayouts: GenericLayout<Resource | Group>[]
   private bodyTops?: Map<string, number> // keyed by createEntityId
