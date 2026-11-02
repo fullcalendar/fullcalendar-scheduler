@@ -43,27 +43,93 @@ describe('timeline virtualized fast scrolling', () => {
     observer.disconnect()
   }
 
+  async function expectStableFastScroll(scrollEl: HTMLElement) {
+    const initialScrollHeight = scrollEl.scrollHeight
+
+    await scrollPastUnmeasuredRows(scrollEl)
+    const scrollTop = scrollEl.scrollTop
+
+    expect(scrollTop).toBe(SCROLL_STEP * SCROLL_STEP_CNT)
+    expect(scrollEl.scrollHeight).toBe(initialScrollHeight)
+
+    await waitTimeout(SCROLL_END_WAIT)
+    expect(scrollEl.scrollTop).toBe(scrollTop)
+    expect(scrollEl.scrollHeight).toBe(initialScrollHeight)
+  }
+
+  // The calendar's teardown is also within ignoreResizeObserverLoops
+  async function withCalendar(options, testFunc: (calendar, scrollEl: HTMLElement) => Promise<void>) {
+    await ignoreResizeObserverLoops(async () => {
+      const calendar = initCalendar(options)
+
+      await waitTimeout(100)
+      await testFunc(calendar, new ResourceTimelineViewWrapper(calendar).getTimeBodyEl())
+      calendar.destroy()
+      await waitTimeout(50)
+    })
+  }
+
   // #8135
   it('does not adjust scroll for empty lanes shorter than their row', async () => {
-    const calendar = initCalendar({
+    await withCalendar({
       resources: buildResources(),
       // With the cell's 16px of inner spacing, the row is exactly the estimate. Nothing to correct
       resourceCellContent: { html: '<div style="height:24px"></div>' },
+    }, async (_calendar, scrollEl) => {
+      await expectStableFastScroll(scrollEl)
     })
-    const scrollEl = new ResourceTimelineViewWrapper(calendar).getTimeBodyEl()
+  })
 
-    await ignoreResizeObserverLoops(async () => {
-      await waitTimeout(100)
-      const initialScrollHeight = scrollEl.scrollHeight
+  // #8135
+  it('estimates unmeasured rows from measured rows, leaving scroll stable when alike', async () => {
+    await withCalendar({
+      resources: buildResources(),
+      resourceCellContent: { html: '<div style="height:60px"></div>' },
+    }, async (_calendar, scrollEl) => {
+      await expectStableFastScroll(scrollEl)
+    })
+  })
 
-      await scrollPastUnmeasuredRows(scrollEl)
-      const scrollTop = scrollEl.scrollTop
+  it('keeps the visible row in place when the estimate changes', async () => {
+    await withCalendar({
+      resources: buildResources(),
+      resourceCellContent: (arg) => ({
+        // Enough tall rows to set the initial estimate, then fewer than the short rows measured later
+        html: `<div style="height:${arg.resource.id < 'r0010' ? 80 : 10}px"></div><span>${arg.resource.id}</span>`,
+      }),
+    }, async (calendar, scrollEl) => {
+      const getFirstVisibleRow = () => {
+        const scrollerTop = scrollEl.getBoundingClientRect().top
+        const dataGridEl = new ResourceTimelineViewWrapper(calendar).getDataGridBodyEl()
+        const labels = (Array.from(dataGridEl.querySelectorAll('span')) as HTMLElement[])
+          .map((el) => ({ id: el.textContent, top: el.getBoundingClientRect().top - scrollerTop }))
+          .filter((label) => label.top >= 0 && /^r\d+$/.test(label.id))
+          .sort((a, b) => a.top - b.top)
 
-      expect(scrollTop).toBe(SCROLL_STEP * SCROLL_STEP_CNT)
-      expect(scrollEl.scrollHeight).toBe(initialScrollHeight)
+        return labels[0]
+      }
+      scrollEl.scrollTop = 20000
+      await waitTimeout(200) // rows at the destination are measured, but the scroll hasn't ended
+      const rowDuringScroll = getFirstVisibleRow()
+      const scrollHeightDuringScroll = scrollEl.scrollHeight
 
       await waitTimeout(SCROLL_END_WAIT)
-      expect(scrollEl.scrollTop).toBe(scrollTop)
+      expect(scrollEl.scrollHeight).toBeLessThan(scrollHeightDuringScroll / 2) // the estimate came down
+
+      const rowAfterScroll = getFirstVisibleRow()
+      expect(rowAfterScroll.id).toBe(rowDuringScroll.id)
+      expect(Math.abs(rowAfterScroll.top - rowDuringScroll.top)).toBeLessThanOrEqual(1)
+    })
+  })
+
+  it('does not change the estimate when the window scrolls', async () => {
+    await withCalendar({
+      height: 'auto',
+      resources: buildResources(),
+      resourceCellContent: { html: '<div style="height:60px"></div>' },
+    }, async (_calendar, scrollEl) => {
+      // 1px border on each row. Most rows are unmeasured and remain at the initial estimate of 40px
+      expect(scrollEl.scrollHeight).toBeLessThan(buildResources().length * 41 * 1.5)
     })
   })
 })

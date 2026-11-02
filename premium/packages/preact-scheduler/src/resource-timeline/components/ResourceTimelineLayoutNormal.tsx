@@ -130,6 +130,7 @@ interface ResourceTimelineViewState {
 }
 
 const defaultOwnCellHeight = 40
+const rowHeightSampleSize = 30
 
 export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimelineLayoutNormalProps, ResourceTimelineViewState> {
   state = {} as ResourceTimelineViewState
@@ -144,6 +145,10 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
 
   private queuedEntityScroll = false
 
+  // the assumed height of rows that haven't been measured yet
+  private estimatedRowHeight = defaultOwnCellHeight
+  private recentlyMeasuredRowKeys: string[] = [] // the last rowHeightSampleSize, oldest first
+
   private _isUnmounting: boolean
 
   // A row is as tall as its taller cell, so a cell's change in height is not the row's. An empty
@@ -151,15 +156,22 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
   handleSpreadsheetCellHeightChange = (val: number, key: string, oldVal: number | null) => {
     const timeHeight = this.timeEntityInnerHeightMap.current.get(key) || 0
 
+    if (oldVal == null) {
+      this.recentlyMeasuredRowKeys.push(key)
+      if (this.recentlyMeasuredRowKeys.length > rowHeightSampleSize) {
+        this.recentlyMeasuredRowKeys.shift()
+      }
+    }
+
     this.handleBodyRowHeightChange(
       key,
-      Math.max(oldVal ?? defaultOwnCellHeight, timeHeight),
+      Math.max(oldVal ?? this.estimatedRowHeight, timeHeight),
       Math.max(val, timeHeight),
     )
   }
 
   handleTimeCellHeightChange = (val: number, key: string, oldVal: number | null) => {
-    const spreadsheetHeight = this.dataGridEntityInnerHeightMap.current.get(key) ?? defaultOwnCellHeight
+    const spreadsheetHeight = this.dataGridEntityInnerHeightMap.current.get(key) ?? this.estimatedRowHeight
 
     this.handleBodyRowHeightChange(
       key,
@@ -357,15 +369,17 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
       ? timeTotalWidth - timeClientWidth
       : undefined
 
+    this.updateEstimatedRowHeight()
+
     // totalBodyHeight is the height WITHIN the scrollers
     let [bodyHeights, totalBodyHeight] = computeHeights( // TODO: memoize?
       bodyLayouts,
       createEntityId,
       (entityKey) => { // makes memoization impossible!
-        const entitySpreadsheetHeight = this.dataGridEntityInnerHeightMap.current.get(entityKey) ?? defaultOwnCellHeight
+        const entitySpreadsheetHeight = this.dataGridEntityInnerHeightMap.current.get(entityKey) ?? this.estimatedRowHeight
 
         // map doesn't contain group-column-cell heights, thus ||0
-        // TODO: better use defaultOwnCellHeight
+        // TODO: better use estimatedRowHeight
         const entityTimeHeight = this.timeEntityInnerHeightMap.current.get(entityKey) || 0
 
         return Math.max(entitySpreadsheetHeight, entityTimeHeight)
@@ -1344,6 +1358,33 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
   // ENTITY (RESOURCE) Scrolling
   // -----------------------------------------------------------------------------------------------
 
+  // Assumes unmeasured rows are as tall as the median of the rows measured most recently, so that
+  // the scroll height stays stable when rows are alike, and a scrollbar drag can track the pointer.
+  // Doesn't change during a scroll, when it would move rows that scrollSlack doesn't account for.
+  // Doesn't change when the window scrolls, because the anchoring below only works on bodyScroller.
+  private updateEstimatedRowHeight() {
+    const { recentlyMeasuredRowKeys } = this
+    const { options } = this.context
+
+    if (
+      options.virtualization &&
+      !getIsHeightAuto(options) &&
+      !this.isScrolling &&
+      recentlyMeasuredRowKeys.length
+    ) {
+      const sortedHeights = recentlyMeasuredRowKeys.map((key) => Math.max(
+        this.dataGridEntityInnerHeightMap.current.get(key),
+        this.timeEntityInnerHeightMap.current.get(key) || 0,
+      )).sort((a, b) => a - b)
+      const estimatedRowHeight = sortedHeights[sortedHeights.length >> 1]
+
+      if (estimatedRowHeight !== this.estimatedRowHeight) {
+        this.estimatedRowHeight = estimatedRowHeight
+        this.queuedEntityScroll = true // keep the current row in place
+      }
+    }
+  }
+
   private isScrolling = false
 
   // REQUESTED scroll by external systems
@@ -1416,15 +1457,18 @@ export class ResourceTimelineLayoutNormal extends DateComponent<ResourceTimeline
         }
       }
 
-      // At scrolling end, convert scrollSlack into real scroll and zero out
-      // TODO: have below be in closure as well?
-      const { scrollSlack } = this
-      if (scrollSlack) {
-        // console.log('CONSUMING', scrollSlack)
+      // At scrolling end, convert scrollSlack into real scroll and zero out. The anchor above is
+      // relative to the row, so it also holds if this rerender changes estimatedRowHeight
+      if (this.scrollSlack) {
+        // console.log('CONSUMING', this.scrollSlack)
         this.scrollSlack = 0
-        this.forceUpdate(() => {
-          this.bodyScroller.scrollTo({ y: y - scrollSlack })
-        })
+        this.queuedEntityScroll = true
+      }
+
+      // Virtualization always rerenders, because rows measured during the scroll can change
+      // estimatedRowHeight. Otherwise, all rows are measured from the start
+      if (this.queuedEntityScroll || this.context.options.virtualization) {
+        this.forceUpdate()
       }
     }
   }
