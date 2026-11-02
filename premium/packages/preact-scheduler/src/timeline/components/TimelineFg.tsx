@@ -105,7 +105,6 @@ export class TimelineFg extends BaseComponent<TimelineFgProps, TimelineFgState> 
       props.clipStart,
       props.clipEnd,
     )
-    const allSegsProjected = sourceSegs.length === fgSegs.length
     let placementResult = buildTimelineSegPlacements(
       sourceSegs,
       options.eventOrderStrict,
@@ -116,19 +115,15 @@ export class TimelineFg extends BaseComponent<TimelineFgProps, TimelineFgState> 
 
     this.totalHeight = placementResult.contentHeight
     /*
-    An assumed slot width may paint, but it may not report a height upward.
-    Height is latched by the consumer, and `allSegsProjected` can go false later
-    — a virtualized clip that excludes any seg blocks every subsequent fire — so
-    a provisional height reported now could be the last one a resource lane ever
-    receives.
+    An assumed slot width may paint, but it may not report a height upward. It would be wrong
+    until the width is measured. An empty lane waits for the width too, which stops it from
+    latching 0 before its events arrive.
 
-    Once the width is measured the remaining gates are unchanged, so no lane
-    loses a height it used to get. The one deliberate difference: an empty lane
-    used to report 0 immediately, and now waits for the width. That strictness
-    is wanted — it stops an empty lane from latching 0 before its events arrive.
+    With virtualization, sourceSegs are only those within the horizontal clip, and the height is
+    reported from them. A resource row fits the events on screen, and shrinks after scrolling
+    past a tall stack, unlike without virtualization.
     */
     this.totalHeightSettled = props.slotWidth != null &&
-      allSegsProjected &&
       placementResult.isSettled
 
     const hasListItems = Boolean(
