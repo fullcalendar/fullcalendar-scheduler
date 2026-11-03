@@ -10,8 +10,8 @@
     "clean": "rm -rf .next"
   },
   "dependencies": {
-    "@fullcalendar/react": "^7.1.3",
-    "@fullcalendar/react-scheduler": "^7.1.3",
+    "@fullcalendar/react": "^7.1.4",
+    "@fullcalendar/react-scheduler": "^7.1.4",
     "@next/font": "14.2.15",
     "next": "14.2.22",
     "react": "18.3.1",

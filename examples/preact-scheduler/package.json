@@ -13,8 +13,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@fullcalendar/preact": "^7.1.3",
-    "@fullcalendar/preact-scheduler": "^7.1.3",
+    "@fullcalendar/preact": "^7.1.4",
+    "@fullcalendar/preact-scheduler": "^7.1.4",
     "preact": "^10.29.8",
     "temporal-polyfill": "^1.0.1"
   },

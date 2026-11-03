@@ -1,12 +1,12 @@
 {
   "name": "@fullcalendar/angular-scheduler",
-  "version": "7.1.3",
+  "version": "7.1.4",
   "title": "FullCalendar Angular",
   "description": "FullCalendar Angular Scheduler package",
   "peerDependencies": {
-    "@fullcalendar/angular": "workspace:7.1.3",
-    "fullcalendar": "workspace:7.1.3",
-    "fullcalendar-scheduler": "workspace:7.1.3",
+    "@fullcalendar/angular": "workspace:7.1.4",
+    "fullcalendar": "workspace:7.1.4",
+    "fullcalendar-scheduler": "workspace:7.1.4",
     "temporal-polyfill": "^1.0.1"
   },
   "devDependencies": {
@@ -18,10 +18,10 @@
     "@angular/core": "^16.2.0",
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
-    "@fullcalendar/angular": "workspace:7.1.3",
+    "@fullcalendar/angular": "workspace:7.1.4",
     "@types/jasmine": "~4.3.0",
-    "fullcalendar": "workspace:7.1.3",
-    "fullcalendar-scheduler": "workspace:7.1.3",
+    "fullcalendar": "workspace:7.1.4",
+    "fullcalendar-scheduler": "workspace:7.1.4",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

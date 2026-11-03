@@ -10,8 +10,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "fullcalendar": "^7.1.3",
-    "fullcalendar-scheduler": "^7.1.3",
+    "fullcalendar": "^7.1.4",
+    "fullcalendar-scheduler": "^7.1.4",
     "temporal-polyfill": "^1.0.1"
   },
   "devDependencies": {

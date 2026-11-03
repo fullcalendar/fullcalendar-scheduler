@@ -55,10 +55,10 @@ importers:
         specifier: ^16.0.0
         version: 16.2.12(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(rxjs@7.8.2))(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(@angular/platform-browser@16.2.12(@angular/animations@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(rxjs@7.8.2))(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(rxjs@7.8.2))(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -72,10 +72,13 @@ importers:
       zone.js:
         specifier: ~0.13.0
         version: 0.13.3
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ^16.0.2
-        version: 16.2.16(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@types/node@24.10.9)(html-webpack-plugin@5.6.6(webpack@5.94.0))(karma@6.4.4)(lightningcss@1.32.0)(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(tslib@2.8.1)(typescript@5.0.4))(stylus@0.62.0)(typescript@5.0.4)
+        version: 16.2.16(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@types/node@24.10.9)(html-webpack-plugin@5.6.6(webpack@5.104.1))(karma@6.4.4)(lightningcss@1.32.0)(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(tslib@2.8.1)(typescript@5.0.4))(stylus@0.62.0)(typescript@5.0.4)
       '@angular/cli':
         specifier: ~16.0.2
         version: 16.0.6(chokidar@3.5.3)
@@ -106,9 +109,6 @@ importers:
       typescript:
         specifier: ~5.0.2
         version: 5.0.4
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular17:
     dependencies:
@@ -137,10 +137,10 @@ importers:
         specifier: ^17.0.0
         version: 17.3.12(@angular/common@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2))(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10))(@angular/platform-browser@17.3.12(@angular/animations@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(@angular/common@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2))(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2))(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -154,10 +154,13 @@ importers:
       zone.js:
         specifier: ~0.14.2
         version: 0.14.10
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ^17.0.3
-        version: 17.3.17(@angular/compiler-cli@17.3.12(@angular/compiler@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.2.2))(@types/express@4.17.25)(@types/node@24.10.9)(chokidar@3.6.0)(html-webpack-plugin@5.6.6(webpack@5.104.1))(karma@6.4.4)(lightningcss@1.32.0)(stylus@0.62.0)(typescript@5.2.2)
+        version: 17.3.17(@angular/compiler-cli@17.3.12(@angular/compiler@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.2.2))(@types/express@4.17.25)(@types/node@24.10.9)(chokidar@3.6.0)(html-webpack-plugin@5.6.6(webpack@5.94.0))(karma@6.4.4)(lightningcss@1.32.0)(stylus@0.62.0)(typescript@5.2.2)
       '@angular/cli':
         specifier: ^17.0.3
         version: 17.3.17(chokidar@3.6.0)
@@ -188,9 +191,6 @@ importers:
       typescript:
         specifier: ~5.2.2
         version: 5.2.2
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular18:
     dependencies:
@@ -219,10 +219,10 @@ importers:
         specifier: ^18.0.0
         version: 18.2.14(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2))(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10))(@angular/platform-browser@18.2.14(@angular/animations@18.2.14(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10)))(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2))(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@18.2.14(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10))(rxjs@7.8.2))(@angular/core@18.2.14(rxjs@7.8.2)(zone.js@0.14.10))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -236,6 +236,9 @@ importers:
       zone.js:
         specifier: ~0.14.3
         version: 0.14.10
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ^18.0.2
@@ -270,9 +273,6 @@ importers:
       typescript:
         specifier: ~5.4.2
         version: 5.4.5
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular19:
     dependencies:
@@ -301,10 +301,10 @@ importers:
         specifier: ^19.0.0
         version: 19.2.18(@angular/common@19.2.18(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@19.2.18(@angular/animations@19.2.18(@angular/common@19.2.18(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@19.2.18(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@19.2.18(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.18(rxjs@7.8.2)(zone.js@0.15.1))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -318,6 +318,9 @@ importers:
       zone.js:
         specifier: ~0.15.0
         version: 0.15.1
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ^19.0.2
@@ -352,9 +355,6 @@ importers:
       typescript:
         specifier: ~5.6.2
         version: 5.6.3
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular20:
     dependencies:
@@ -377,10 +377,10 @@ importers:
         specifier: ^20.0.0
         version: 20.3.16(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.3.16(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)(zone.js@0.15.1))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -394,6 +394,9 @@ importers:
       zone.js:
         specifier: ~0.15.0
         version: 0.15.1
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular/build':
         specifier: ^20.0.4
@@ -428,9 +431,6 @@ importers:
       typescript:
         specifier: ~5.8.2
         version: 5.8.3
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular21:
     dependencies:
@@ -453,10 +453,10 @@ importers:
         specifier: ^21.0.0
         version: 21.1.2(@angular/common@21.1.2(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@21.1.2(@angular/common@21.1.2(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@21.1.2(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -467,6 +467,9 @@ importers:
       tslib:
         specifier: ^2.3.0
         version: 2.8.1
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular/build':
         specifier: ^21.0.4
@@ -486,9 +489,6 @@ importers:
       vitest:
         specifier: ^4.0.8
         version: 4.0.18(@opentelemetry/api@1.9.1)(@types/node@24.10.9)(@vitest/browser-playwright@4.0.18)(jiti@2.6.1)(jsdom@27.4.0)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular21-scheduler:
     dependencies:
@@ -511,16 +511,16 @@ importers:
         specifier: ^21.0.0
         version: 21.1.2(@angular/common@21.1.2(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@21.1.2(@angular/common@21.1.2(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@21.1.2(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@21.1.2(@angular/compiler@21.1.2)(rxjs@7.8.2)(zone.js@0.15.1))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       '@fullcalendar/angular-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../premium/packages/angular-scheduler/dist
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       fullcalendar-scheduler:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../premium/packages/vanilla-scheduler/dist
       rxjs:
         specifier: ~7.8.0
@@ -531,6 +531,9 @@ importers:
       tslib:
         specifier: ^2.3.0
         version: 2.8.1
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular/build':
         specifier: ^21.0.4
@@ -550,9 +553,6 @@ importers:
       vitest:
         specifier: ^4.0.8
         version: 4.0.18(@opentelemetry/api@1.9.1)(@types/node@24.10.9)(@vitest/browser-playwright@4.0.18)(jiti@2.6.1)(jsdom@27.4.0)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/angular22:
     dependencies:
@@ -575,10 +575,10 @@ importers:
         specifier: ^22.0.2
         version: 22.0.2(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@22.0.2(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@fullcalendar/angular':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/angular/dist/lib(@angular/common@22.0.2(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@22.0.2(@angular/compiler@22.0.2)(rxjs@7.8.2)(zone.js@0.15.1))(fullcalendar@standard+packages+vanilla+dist)(temporal-polyfill@1.0.1)
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       rxjs:
         specifier: ~7.8.0
@@ -589,6 +589,9 @@ importers:
       tslib:
         specifier: ^2.3.0
         version: 2.8.1
+    dependenciesMeta:
+      '@fullcalendar/angular':
+        injected: true
     devDependencies:
       '@angular/build':
         specifier: ^22.0.2
@@ -608,9 +611,6 @@ importers:
       vitest:
         specifier: ^4.0.8
         version: 4.0.18(@opentelemetry/api@1.9.1)(@types/node@24.10.9)(@vitest/browser-playwright@4.0.18)(jiti@2.6.1)(jsdom@27.4.0)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/angular':
-        injected: true
 
   examples/mui-event-calendar:
     dependencies:
@@ -621,10 +621,10 @@ importers:
         specifier: ^11.13.5
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.14)(react@19.2.4))(@types/react@19.2.14)(react@19.2.4)
       '@fullcalendar/mui':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../theming/ui-mui/dist
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(temporal-polyfill@1.0.1)
       '@mui/material':
         specifier: ^7.3.8
@@ -638,6 +638,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -645,9 +648,6 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/mui-scheduler:
     dependencies:
@@ -658,13 +658,13 @@ importers:
         specifier: ^11.13.5
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.14)(react@19.2.4))(@types/react@19.2.14)(react@19.2.4)
       '@fullcalendar/mui':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../theming/ui-mui/dist
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../premium/packages/react-scheduler/dist
       '@mui/material':
         specifier: ^7.3.8
@@ -678,6 +678,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -685,17 +688,14 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/next13:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/react-scheduler/dist(@fullcalendar/react@file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@next/font':
         specifier: 13.2.3
@@ -721,10 +721,10 @@ importers:
   examples/next13-scheduler:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/react-scheduler/dist(@fullcalendar/react@file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       next:
         specifier: 13.5.6
@@ -747,10 +747,10 @@ importers:
   examples/next14:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/react-scheduler/dist(@fullcalendar/react@file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@next/font':
         specifier: 14.2.15
@@ -776,7 +776,7 @@ importers:
   examples/nuxt3:
     dependencies:
       '@fullcalendar/vue3':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vue3/dist
       nuxt:
         specifier: ^3.3.1
@@ -788,7 +788,7 @@ importers:
   examples/preact:
     dependencies:
       '@fullcalendar/preact':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/preact/dist(preact@10.29.8)(temporal-polyfill@1.0.1)
       preact:
         specifier: ^10.29.8
@@ -796,6 +796,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/preact':
+        injected: true
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.8.0
@@ -806,17 +809,14 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/preact':
-        injected: true
 
   examples/preact-scheduler:
     dependencies:
       '@fullcalendar/preact':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/preact/dist(preact@10.29.8)(temporal-polyfill@1.0.1)
       '@fullcalendar/preact-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/preact-scheduler/dist(@fullcalendar/preact@file:standard/packages/preact/dist(preact@10.29.8)(temporal-polyfill@1.0.1))(preact@10.29.8)(temporal-polyfill@1.0.1)
       preact:
         specifier: ^10.29.8
@@ -824,6 +824,11 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/preact':
+        injected: true
+      '@fullcalendar/preact-scheduler':
+        injected: true
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.8.0
@@ -834,16 +839,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/preact':
-        injected: true
-      '@fullcalendar/preact-scheduler':
-        injected: true
 
   examples/react17:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(temporal-polyfill@1.0.1)
       react:
         specifier: ^17.0.2
@@ -854,6 +854,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -861,14 +864,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react18:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       react:
         specifier: ^18.3.1
@@ -879,6 +879,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@types/react':
         specifier: ^18.3.3
@@ -895,14 +898,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react18-debug:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       react:
         specifier: ^18.3.1
@@ -913,6 +913,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -920,20 +923,17 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react18-issue-7619:
     dependencies:
       '@fullcalendar/format-moment':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/format-moment/dist
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/react-scheduler/dist(@fullcalendar/react@file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       date-fns:
         specifier: ^2.14.0
@@ -947,6 +947,11 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
+      '@fullcalendar/react-scheduler':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -954,16 +959,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
-      '@fullcalendar/react-scheduler':
-        injected: true
 
   examples/react18-lazy:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       react:
         specifier: ^18.3.1
@@ -974,6 +974,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -981,14 +984,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react18-mobx-typescript:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       mobx:
         specifier: ^6.0.3
@@ -1005,6 +1005,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@types/react':
         specifier: ^18.3.3
@@ -1021,14 +1024,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react18-redux:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       react:
         specifier: ^18.3.1
@@ -1051,6 +1051,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
@@ -1058,14 +1061,11 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react19:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(temporal-polyfill@1.0.1)
       react:
         specifier: ^19.2.5
@@ -1076,6 +1076,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@types/react':
         specifier: ^19.2.14
@@ -1092,17 +1095,14 @@ importers:
       vite:
         specifier: ^5.2.0
         version: 5.4.21(@types/node@24.10.9)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/react19-scheduler:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/react-scheduler/dist(@fullcalendar/react@file:standard/packages/react/dist(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(temporal-polyfill@1.0.1))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(temporal-polyfill@1.0.1)
       react:
         specifier: ^19.2.5
@@ -1113,6 +1113,11 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
+      '@fullcalendar/react-scheduler':
+        injected: true
     devDependencies:
       '@types/react':
         specifier: ^19.2.14
@@ -1129,16 +1134,11 @@ importers:
       vite:
         specifier: ^5.2.0
         version: 5.4.21(@types/node@24.10.9)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
-      '@fullcalendar/react-scheduler':
-        injected: true
 
   examples/remix:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@remix-run/node':
         specifier: ^2.17.4
@@ -1161,6 +1161,9 @@ importers:
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.17.4
@@ -1177,14 +1180,11 @@ importers:
       vite:
         specifier: ^6.0.0
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
 
   examples/rollup:
     dependencies:
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       temporal-polyfill:
         specifier: ^1.0.1
@@ -1203,10 +1203,10 @@ importers:
   examples/rollup-scheduler:
     dependencies:
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/vanilla/dist
       fullcalendar-scheduler:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../premium/packages/vanilla-scheduler/dist
       temporal-polyfill:
         specifier: ^1.0.1
@@ -1225,7 +1225,7 @@ importers:
   examples/shadcn-event-calendar:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/react/dist
       '@tailwindcss/vite':
         specifier: ^4.2.2
@@ -1301,10 +1301,10 @@ importers:
   examples/shadcn-scheduler:
     dependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../standard/packages/react/dist
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: link:../../premium/packages/react-scheduler/dist
       '@tailwindcss/vite':
         specifier: ^4.2.2
@@ -1397,12 +1397,17 @@ importers:
       zod:
         specifier: ^3.21.4
         version: 3.25.76
+    dependenciesMeta:
+      '@fullcalendar/react':
+        injected: true
+      '@fullcalendar/react-scheduler':
+        injected: true
     devDependencies:
       '@fullcalendar/react':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@fullcalendar/react-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/react-scheduler/dist(@fullcalendar/react@file:standard/packages/react/dist(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(temporal-polyfill@1.0.1)
       '@types/eslint':
         specifier: ^8.21.3
@@ -1431,20 +1436,18 @@ importers:
       typescript:
         specifier: ^5.0.2
         version: 5.9.3
-    dependenciesMeta:
-      '@fullcalendar/react':
-        injected: true
-      '@fullcalendar/react-scheduler':
-        injected: true
 
   examples/typescript:
     dependencies:
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/vanilla/dist(temporal-polyfill@1.0.1)
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      fullcalendar:
+        injected: true
     devDependencies:
       typescript:
         specifier: ^5.5.0
@@ -1452,21 +1455,23 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      fullcalendar:
-        injected: true
 
   examples/typescript-scheduler:
     dependencies:
       fullcalendar:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/vanilla/dist(temporal-polyfill@1.0.1)
       fullcalendar-scheduler:
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/vanilla-scheduler/dist(fullcalendar@file:standard/packages/vanilla/dist(temporal-polyfill@1.0.1))(temporal-polyfill@1.0.1)
       temporal-polyfill:
         specifier: ^1.0.1
         version: 1.0.1
+    dependenciesMeta:
+      fullcalendar:
+        injected: true
+      fullcalendar-scheduler:
+        injected: true
     devDependencies:
       typescript:
         specifier: ^5.5.0
@@ -1474,19 +1479,14 @@ importers:
       vite:
         specifier: ^6.0.11
         version: 6.4.1(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
-    dependenciesMeta:
-      fullcalendar:
-        injected: true
-      fullcalendar-scheduler:
-        injected: true
 
   examples/vue3:
     dependencies:
       '@fullcalendar/vue3':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/vue3/dist(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@4.9.5))
       '@fullcalendar/vue3-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/vue3-scheduler/dist(@fullcalendar/vue3@file:standard/packages/vue3/dist(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@4.9.5)))(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@4.9.5))
       temporal-polyfill:
         specifier: ^1.0.1
@@ -1494,6 +1494,11 @@ importers:
       vue:
         specifier: ^3.2.45
         version: 3.5.27(typescript@4.9.5)
+    dependenciesMeta:
+      '@fullcalendar/vue3':
+        injected: true
+      '@fullcalendar/vue3-scheduler':
+        injected: true
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
@@ -1507,16 +1512,11 @@ importers:
       vue-tsc:
         specifier: ^1.0.11
         version: 1.8.27(typescript@4.9.5)
-    dependenciesMeta:
-      '@fullcalendar/vue3':
-        injected: true
-      '@fullcalendar/vue3-scheduler':
-        injected: true
 
   examples/vue3-primevue:
     dependencies:
       '@fullcalendar/vue3':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/vue3/dist(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@5.9.3))
       '@primeuix/themes':
         specifier: ^2.0.2
@@ -1533,6 +1533,9 @@ importers:
       vue:
         specifier: ^3.5.24
         version: 3.5.27(typescript@5.9.3)
+    dependenciesMeta:
+      '@fullcalendar/vue3':
+        injected: true
     devDependencies:
       '@types/node':
         specifier: ^24.10.1
@@ -1552,17 +1555,14 @@ importers:
       vue-tsc:
         specifier: ^3.1.4
         version: 3.2.4(typescript@5.9.3)
-    dependenciesMeta:
-      '@fullcalendar/vue3':
-        injected: true
 
   examples/vue3-scheduler:
     dependencies:
       '@fullcalendar/vue3':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:standard/packages/vue3/dist(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@4.9.5))
       '@fullcalendar/vue3-scheduler':
-        specifier: ^7.1.3
+        specifier: ^7.1.4
         version: file:premium/packages/vue3-scheduler/dist(@fullcalendar/vue3@file:standard/packages/vue3/dist(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@4.9.5)))(temporal-polyfill@1.0.1)(vue@3.5.27(typescript@4.9.5))
       temporal-polyfill:
         specifier: ^1.0.1
@@ -1570,6 +1570,11 @@ importers:
       vue:
         specifier: ^3.2.45
         version: 3.5.27(typescript@4.9.5)
+    dependenciesMeta:
+      '@fullcalendar/vue3':
+        injected: true
+      '@fullcalendar/vue3-scheduler':
+        injected: true
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
@@ -1583,11 +1588,6 @@ importers:
       vue-tsc:
         specifier: ^1.0.11
         version: 1.8.27(typescript@4.9.5)
-    dependenciesMeta:
-      '@fullcalendar/vue3':
-        injected: true
-      '@fullcalendar/vue3-scheduler':
-        injected: true
 
   premium/packages/angular-scheduler:
     devDependencies:
@@ -1616,16 +1616,16 @@ importers:
         specifier: ^16.2.0
         version: 16.2.12(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(rxjs@7.8.2))(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(@angular/platform-browser@16.2.12(@angular/animations@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@angular/common@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3))(rxjs@7.8.2))(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))
       '@fullcalendar/angular':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/angular/dist/lib
       '@types/jasmine':
         specifier: ~4.3.0
         version: 4.3.6
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vanilla/dist
       fullcalendar-scheduler:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla-scheduler/dist
       jasmine-core:
         specifier: ~4.6.0
@@ -1672,13 +1672,13 @@ importers:
   premium/packages/lwc-scheduler:
     dependencies:
       '@fullcalendar/lwc':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/lwc-calendar
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vanilla/dist
       fullcalendar-scheduler:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla-scheduler/dist
     devDependencies:
       '@salesforce/cli':
@@ -1715,20 +1715,20 @@ importers:
   premium/packages/preact-scheduler:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/headless-calendar/dist
       '@full-ui/headless-grid':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-grid/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
         specifier: workspace:*
         version: link:../../../standard/scripts
       '@fullcalendar/preact':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/preact/dist
       preact:
         specifier: ^10.29.8
@@ -1744,20 +1744,20 @@ importers:
   premium/packages/react-scheduler:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/headless-calendar/dist
       '@full-ui/headless-grid':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-grid/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
         specifier: workspace:*
         version: link:../../../standard/scripts
       '@fullcalendar/react':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/react/dist
       '@testing-library/react':
         specifier: ^16.3.2
@@ -1788,26 +1788,26 @@ importers:
   premium/packages/vanilla-scheduler:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/headless-calendar/dist
       '@full-ui/headless-grid':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-grid/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/core-types/dist
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vanilla/dist
       preact:
         specifier: ^10.29.8
         version: 10.29.8
     devDependencies:
       '@fullcalendar/preact':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/preact/dist
       '@fullcalendar/preact-scheduler':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../preact-scheduler/dist
       '@types/archiver':
         specifier: ^5.3.4
@@ -1869,16 +1869,16 @@ importers:
   premium/packages/vanilla-scheduler-w-react:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/headless-calendar/dist
       '@full-ui/headless-grid':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-grid/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/core-types/dist
       fullcalendar-w-react:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vanilla-w-react/dist
       react:
         specifier: ^19.2.3
@@ -1888,10 +1888,10 @@ importers:
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@fullcalendar/react':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/react/dist
       '@fullcalendar/react-scheduler':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../react-scheduler/dist
       '@types/react':
         specifier: ^19.2.9
@@ -1907,26 +1907,26 @@ importers:
   premium/packages/vue3-scheduler:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/headless-calendar/dist
       '@full-ui/headless-grid':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-grid/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/core-types/dist
       preact:
         specifier: ^10.29.8
         version: 10.29.8
     devDependencies:
       '@fullcalendar/vue3':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vue3/dist
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vanilla/dist
       fullcalendar-scheduler:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla-scheduler/dist
       temporal-polyfill:
         specifier: ^1.0.1
@@ -1939,26 +1939,26 @@ importers:
   premium/packages/web-component-scheduler:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/headless-calendar/dist
       '@full-ui/headless-grid':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-grid/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/core-types/dist
       preact:
         specifier: ^10.29.8
         version: 10.29.8
     devDependencies:
       '@fullcalendar/web-component':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/web-component/dist
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../../standard/packages/vanilla/dist
       fullcalendar-scheduler:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla-scheduler/dist
       temporal-polyfill:
         specifier: ^1.0.1
@@ -2035,7 +2035,7 @@ importers:
         specifier: ~4.3.0
         version: 4.3.6
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla/dist
       jasmine-core:
         specifier: ~4.6.0
@@ -2078,7 +2078,7 @@ importers:
         specifier: workspace:*
         version: link:../../scripts
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
       bootstrap:
         specifier: ^5.3.8
@@ -2091,7 +2091,7 @@ importers:
   standard/packages/core-types:
     devDependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar-scripts/standard':
         specifier: workspace:*
@@ -2104,10 +2104,10 @@ importers:
   standard/packages/format-luxon3:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2127,10 +2127,10 @@ importers:
   standard/packages/format-moment:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2147,10 +2147,10 @@ importers:
   standard/packages/google-calendar:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2180,10 +2180,10 @@ importers:
   standard/packages/icalendar:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2200,7 +2200,7 @@ importers:
   standard/packages/lwc-calendar:
     dependencies:
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla/dist
     devDependencies:
       '@lwc/eslint-plugin-lwc':
@@ -2225,10 +2225,10 @@ importers:
   standard/packages/preact:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2254,10 +2254,10 @@ importers:
   standard/packages/react:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2301,10 +2301,10 @@ importers:
   standard/packages/rrule:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
     devDependencies:
       '@fullcalendar-scripts/standard':
@@ -2321,10 +2321,10 @@ importers:
   standard/packages/vanilla:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
       preact:
         specifier: ^10.29.8
@@ -2334,7 +2334,7 @@ importers:
         specifier: workspace:*
         version: link:../../scripts
       '@fullcalendar/preact':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../preact/dist
       '@types/archiver':
         specifier: ^5.3.4
@@ -2423,10 +2423,10 @@ importers:
   standard/packages/vanilla-w-react:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
       react:
         specifier: ^19.2.3
@@ -2439,7 +2439,7 @@ importers:
         specifier: workspace:*
         version: link:../../scripts
       '@fullcalendar/react':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../react/dist
       '@types/react':
         specifier: ^19.2.9
@@ -2461,10 +2461,10 @@ importers:
   standard/packages/vue3:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
       preact:
         specifier: ^10.29.8
@@ -2483,7 +2483,7 @@ importers:
         specifier: ^2.4.6
         version: 2.4.6
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla/dist
       globby:
         specifier: ^13.1.2
@@ -2514,10 +2514,10 @@ importers:
   standard/packages/web-component:
     dependencies:
       '@full-ui/headless-calendar':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../headless-calendar/dist
       '@fullcalendar/core':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../core-types/dist
       preact:
         specifier: ^10.29.8
@@ -2527,7 +2527,7 @@ importers:
         specifier: workspace:*
         version: link:../../scripts
       fullcalendar:
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../vanilla/dist
       globby:
         specifier: ^13.1.2
@@ -3045,10 +3045,10 @@ importers:
   theming/ui-mui:
     devDependencies:
       '@fullcalendar/react':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../standard/packages/react/dist
       '@fullcalendar/react-scheduler':
-        specifier: workspace:7.1.3
+        specifier: workspace:7.1.4
         version: link:../../premium/packages/react-scheduler/dist
       '@mui/icons-material':
         specifier: ^7.1.2
@@ -7484,13 +7484,13 @@ packages:
     peerDependencies:
       '@angular/common': 16 - 22
       '@angular/core': 16 - 22
-      fullcalendar: workspace:7.1.3
+      fullcalendar: workspace:7.1.4
       temporal-polyfill: ^1.0.1
 
   '@fullcalendar/preact-scheduler@file:premium/packages/preact-scheduler/dist':
     resolution: {directory: premium/packages/preact-scheduler/dist, type: directory}
     peerDependencies:
-      '@fullcalendar/preact': workspace:7.1.3
+      '@fullcalendar/preact': workspace:7.1.4
       preact: ^10.29.0
       temporal-polyfill: ^1.0.1
 
@@ -7503,7 +7503,7 @@ packages:
   '@fullcalendar/react-scheduler@file:premium/packages/react-scheduler/dist':
     resolution: {directory: premium/packages/react-scheduler/dist, type: directory}
     peerDependencies:
-      '@fullcalendar/react': workspace:7.1.3
+      '@fullcalendar/react': workspace:7.1.4
       react: ^17 || ^18 || ^19
       react-dom: ^17 || ^18 || ^19
       temporal-polyfill: ^1.0.1
@@ -7518,7 +7518,7 @@ packages:
   '@fullcalendar/vue3-scheduler@file:premium/packages/vue3-scheduler/dist':
     resolution: {directory: premium/packages/vue3-scheduler/dist, type: directory}
     peerDependencies:
-      '@fullcalendar/vue3': workspace:7.1.3
+      '@fullcalendar/vue3': workspace:7.1.4
       temporal-polyfill: ^1.0.1
       vue: ^3.0.11
 
@@ -15843,7 +15843,7 @@ packages:
   fullcalendar-scheduler@file:premium/packages/vanilla-scheduler/dist:
     resolution: {directory: premium/packages/vanilla-scheduler/dist, type: directory}
     peerDependencies:
-      fullcalendar: workspace:7.1.3
+      fullcalendar: workspace:7.1.4
       temporal-polyfill: ^1.0.1
 
   fullcalendar@file:standard/packages/vanilla/dist:
@@ -23935,7 +23935,7 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-angular@16.2.16(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@types/node@24.10.9)(html-webpack-plugin@5.6.6(webpack@5.94.0))(karma@6.4.4)(lightningcss@1.32.0)(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(tslib@2.8.1)(typescript@5.0.4))(stylus@0.62.0)(typescript@5.0.4)':
+  '@angular-devkit/build-angular@16.2.16(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(@types/node@24.10.9)(html-webpack-plugin@5.6.6(webpack@5.104.1))(karma@6.4.4)(lightningcss@1.32.0)(ng-packagr@16.2.3(@angular/compiler-cli@16.2.12(@angular/compiler@16.2.12(@angular/core@16.2.12(rxjs@7.8.2)(zone.js@0.13.3)))(typescript@5.0.4))(tslib@2.8.1)(typescript@5.0.4))(stylus@0.62.0)(typescript@5.0.4)':
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@angular-devkit/architect': 0.1602.16(chokidar@3.5.3)
@@ -24001,9 +24001,9 @@ snapshots:
       vite: 4.5.5(@types/node@24.10.9)(less@4.1.3)(lightningcss@1.32.0)(sass@1.64.1)(stylus@0.62.0)(terser@5.19.2)
       webpack: 5.94.0(esbuild@0.18.17)
       webpack-dev-middleware: 6.1.2(webpack@5.94.0(esbuild@0.18.17))
-      webpack-dev-server: 4.15.1(webpack@5.94.0(esbuild@0.18.17))
+      webpack-dev-server: 4.15.1(webpack@5.104.1)
       webpack-merge: 5.9.0
-      webpack-subresource-integrity: 5.1.0(html-webpack-plugin@5.6.6(webpack@5.94.0))(webpack@5.94.0(esbuild@0.18.17))
+      webpack-subresource-integrity: 5.1.0(html-webpack-plugin@5.6.6(webpack@5.104.1))(webpack@5.94.0(esbuild@0.18.17))
     optionalDependencies:
       esbuild: 0.18.17
       karma: 6.4.4
@@ -24117,11 +24117,11 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@angular-devkit/build-angular@17.3.17(@angular/compiler-cli@17.3.12(@angular/compiler@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.2.2))(@types/express@4.17.25)(@types/node@24.10.9)(chokidar@3.6.0)(html-webpack-plugin@5.6.6(webpack@5.104.1))(karma@6.4.4)(lightningcss@1.32.0)(stylus@0.62.0)(typescript@5.2.2)':
+  '@angular-devkit/build-angular@17.3.17(@angular/compiler-cli@17.3.12(@angular/compiler@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.2.2))(@types/express@4.17.25)(@types/node@24.10.9)(chokidar@3.6.0)(html-webpack-plugin@5.6.6(webpack@5.94.0))(karma@6.4.4)(lightningcss@1.32.0)(stylus@0.62.0)(typescript@5.2.2)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.1703.17(chokidar@3.6.0)
-      '@angular-devkit/build-webpack': 0.1703.17(chokidar@3.6.0)(webpack-dev-server@4.15.1(webpack@5.94.0(esbuild@0.20.1)))(webpack@5.94.0(esbuild@0.20.1))
+      '@angular-devkit/build-webpack': 0.1703.17(chokidar@3.6.0)(webpack-dev-server@4.15.1(webpack@5.94.0))(webpack@5.94.0(esbuild@0.20.1))
       '@angular-devkit/core': 17.3.17(chokidar@3.6.0)
       '@angular/compiler-cli': 17.3.12(@angular/compiler@17.3.12(@angular/core@17.3.12(rxjs@7.8.2)(zone.js@0.14.10)))(typescript@5.2.2)
       '@babel/core': 7.26.10
@@ -24180,9 +24180,9 @@ snapshots:
       watchpack: 2.4.0
       webpack: 5.94.0(esbuild@0.20.1)
       webpack-dev-middleware: 6.1.2(webpack@5.94.0(esbuild@0.20.1))
-      webpack-dev-server: 4.15.1(webpack@5.104.1)
+      webpack-dev-server: 4.15.1(webpack@5.94.0)
       webpack-merge: 5.10.0
-      webpack-subresource-integrity: 5.1.0(html-webpack-plugin@5.6.6(webpack@5.104.1))(webpack@5.94.0(esbuild@0.20.1))
+      webpack-subresource-integrity: 5.1.0(html-webpack-plugin@5.6.6(webpack@5.94.0))(webpack@5.94.0(esbuild@0.20.1))
     optionalDependencies:
       esbuild: 0.20.1
       karma: 6.4.4
@@ -24381,16 +24381,16 @@ snapshots:
       '@angular-devkit/architect': 0.1602.16(chokidar@3.5.3)
       rxjs: 7.8.1
       webpack: 5.94.0(esbuild@0.18.17)
-      webpack-dev-server: 4.15.1(webpack@5.94.0(esbuild@0.18.17))
+      webpack-dev-server: 4.15.1(webpack@5.104.1)
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-webpack@0.1703.17(chokidar@3.6.0)(webpack-dev-server@4.15.1(webpack@5.94.0(esbuild@0.20.1)))(webpack@5.94.0(esbuild@0.20.1))':
+  '@angular-devkit/build-webpack@0.1703.17(chokidar@3.6.0)(webpack-dev-server@4.15.1(webpack@5.94.0))(webpack@5.94.0(esbuild@0.20.1))':
     dependencies:
       '@angular-devkit/architect': 0.1703.17(chokidar@3.6.0)
       rxjs: 7.8.1
       webpack: 5.94.0(esbuild@0.20.1)
-      webpack-dev-server: 4.15.1(webpack@5.104.1)
+      webpack-dev-server: 4.15.1(webpack@5.94.0)
     transitivePeerDependencies:
       - chokidar
 
@@ -34950,10 +34950,10 @@ snapshots:
       vite: 7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.99.0)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
       vue: 3.5.27(typescript@6.0.3)
 
-  '@vitest/browser-playwright@4.0.18(playwright@1.58.1)(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)':
+  '@vitest/browser-playwright@4.0.18(playwright@1.58.1)(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)':
     dependencies:
-      '@vitest/browser': 4.0.18(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)
-      '@vitest/mocker': 4.0.18(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))
+      '@vitest/browser': 4.0.18(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)
+      '@vitest/mocker': 4.0.18(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))
       playwright: 1.58.1
       tinyrainbow: 3.0.3
       vitest: 4.0.18(@opentelemetry/api@1.9.1)(@types/node@24.10.9)(@vitest/browser-playwright@4.0.18)(jiti@2.6.1)(jsdom@27.4.0)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
@@ -34977,9 +34977,9 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/browser@4.0.18(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)':
+  '@vitest/browser@4.0.18(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)':
     dependencies:
-      '@vitest/mocker': 4.0.18(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))
+      '@vitest/mocker': 4.0.18(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))
       '@vitest/utils': 4.0.18
       magic-string: 0.30.21
       pixelmatch: 7.1.0
@@ -35020,6 +35020,15 @@ snapshots:
       '@vitest/utils': 4.0.18
       chai: 6.2.2
       tinyrainbow: 3.0.3
+
+  '@vitest/mocker@4.0.18(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))':
+    dependencies:
+      '@vitest/spy': 4.0.18
+      estree-walker: 3.0.3
+      magic-string: 0.30.21
+    optionalDependencies:
+      vite: 7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3)
+    optional: true
 
   '@vitest/mocker@4.0.18(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))':
     dependencies:
@@ -39748,7 +39757,7 @@ snapshots:
       pretty-error: 4.0.0
       tapable: 2.3.0
     optionalDependencies:
-      webpack: 5.94.0(esbuild@0.18.17)
+      webpack: 5.94.0(esbuild@0.20.1)
     optional: true
 
   html-webpack-plugin@5.6.6(webpack@5.98.0):
@@ -46911,7 +46920,7 @@ snapshots:
       ansi-escapes: 5.0.0
       supports-hyperlinks: 2.3.0
 
-  terser-webpack-plugin@5.3.16(esbuild@0.18.17)(webpack@5.94.0):
+  terser-webpack-plugin@5.3.16(esbuild@0.18.17)(webpack@5.94.0(esbuild@0.18.17)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
@@ -46922,7 +46931,7 @@ snapshots:
     optionalDependencies:
       esbuild: 0.18.17
 
-  terser-webpack-plugin@5.3.16(esbuild@0.20.1)(webpack@5.94.0(esbuild@0.20.1)):
+  terser-webpack-plugin@5.3.16(esbuild@0.20.1)(webpack@5.94.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
@@ -48167,7 +48176,7 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
       '@types/node': 24.10.9
-      '@vitest/browser-playwright': 4.0.18(playwright@1.58.1)(vite@7.3.2(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)
+      '@vitest/browser-playwright': 4.0.18(playwright@1.58.1)(vite@7.3.0(@types/node@24.10.9)(jiti@2.6.1)(less@4.5.1)(lightningcss@1.32.0)(sass@1.97.1)(stylus@0.62.0)(terser@5.46.0)(yaml@2.8.3))(vitest@4.0.18)
       jsdom: 27.4.0
     transitivePeerDependencies:
       - jiti
@@ -48382,7 +48391,7 @@ snapshots:
       schema-utils: 4.3.3
       webpack: 5.94.0(esbuild@0.18.17)
 
-  webpack-dev-middleware@5.3.4(webpack@5.94.0(esbuild@0.20.1)):
+  webpack-dev-middleware@5.3.4(webpack@5.94.0):
     dependencies:
       colorette: 2.0.20
       memfs: 3.5.3
@@ -48467,7 +48476,7 @@ snapshots:
       serve-index: 1.9.2
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack-dev-middleware: 5.3.4(webpack@5.94.0(esbuild@0.20.1))
+      webpack-dev-middleware: 5.3.4(webpack@5.94.0(esbuild@0.18.17))
       ws: 8.19.0
     optionalDependencies:
       webpack: 5.104.1
@@ -48511,6 +48520,46 @@ snapshots:
       ws: 8.19.0
     optionalDependencies:
       webpack: 5.94.0(esbuild@0.18.17)
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - supports-color
+      - utf-8-validate
+
+  webpack-dev-server@4.15.1(webpack@5.94.0):
+    dependencies:
+      '@types/bonjour': 3.5.13
+      '@types/connect-history-api-fallback': 1.5.4
+      '@types/express': 4.17.25
+      '@types/serve-index': 1.9.4
+      '@types/serve-static': 1.15.10
+      '@types/sockjs': 0.3.36
+      '@types/ws': 8.18.1
+      ansi-html-community: 0.0.8
+      bonjour-service: 1.3.0
+      chokidar: 3.5.3
+      colorette: 2.0.20
+      compression: 1.8.1
+      connect-history-api-fallback: 2.0.0
+      default-gateway: 6.0.3
+      express: 4.22.1
+      graceful-fs: 4.2.11
+      html-entities: 2.6.0
+      http-proxy-middleware: 2.0.9(@types/express@4.17.25)
+      ipaddr.js: 2.3.0
+      launch-editor: 2.12.0
+      open: 8.4.2
+      p-retry: 4.6.2
+      rimraf: 3.0.2
+      schema-utils: 4.3.3
+      selfsigned: 2.4.1
+      serve-index: 1.9.2
+      sockjs: 0.3.24
+      spdy: 4.0.2
+      webpack-dev-middleware: 5.3.4(webpack@5.94.0)
+      ws: 8.19.0
+    optionalDependencies:
+      webpack: 5.94.0(esbuild@0.20.1)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -48621,13 +48670,6 @@ snapshots:
     optionalDependencies:
       html-webpack-plugin: 5.6.6(webpack@5.104.1)
 
-  webpack-subresource-integrity@5.1.0(html-webpack-plugin@5.6.6(webpack@5.104.1))(webpack@5.94.0(esbuild@0.20.1)):
-    dependencies:
-      typed-assert: 1.0.9
-      webpack: 5.94.0(esbuild@0.20.1)
-    optionalDependencies:
-      html-webpack-plugin: 5.6.6(webpack@5.104.1)
-
   webpack-subresource-integrity@5.1.0(html-webpack-plugin@5.6.6(webpack@5.104.1))(webpack@5.94.0(esbuild@0.23.0)):
     dependencies:
       typed-assert: 1.0.9
@@ -48635,10 +48677,10 @@ snapshots:
     optionalDependencies:
       html-webpack-plugin: 5.6.6(webpack@5.104.1)
 
-  webpack-subresource-integrity@5.1.0(html-webpack-plugin@5.6.6(webpack@5.94.0))(webpack@5.94.0(esbuild@0.18.17)):
+  webpack-subresource-integrity@5.1.0(html-webpack-plugin@5.6.6(webpack@5.94.0))(webpack@5.94.0(esbuild@0.20.1)):
     dependencies:
       typed-assert: 1.0.9
-      webpack: 5.94.0(esbuild@0.18.17)
+      webpack: 5.94.0(esbuild@0.20.1)
     optionalDependencies:
       html-webpack-plugin: 5.6.6(webpack@5.94.0)
 
@@ -48706,7 +48748,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.16(esbuild@0.18.17)(webpack@5.94.0)
+      terser-webpack-plugin: 5.3.16(esbuild@0.18.17)(webpack@5.94.0(esbuild@0.18.17))
       watchpack: 2.5.1
       webpack-sources: 3.3.3
     transitivePeerDependencies:
@@ -48736,7 +48778,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.16(esbuild@0.20.1)(webpack@5.94.0(esbuild@0.20.1))
+      terser-webpack-plugin: 5.3.16(esbuild@0.20.1)(webpack@5.94.0)
       watchpack: 2.5.1
       webpack-sources: 3.3.3
     transitivePeerDependencies:

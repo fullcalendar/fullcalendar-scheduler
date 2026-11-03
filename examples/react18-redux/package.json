@@ -10,7 +10,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@fullcalendar/react": "^7.1.3",
+    "@fullcalendar/react": "^7.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^7.2.0",

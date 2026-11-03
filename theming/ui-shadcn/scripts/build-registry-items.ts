@@ -73,7 +73,7 @@ async function createEventCalendarConfig(theme: string, themeTitle: string) {
     "title": `EventCalendar (${themeTitle})`,
     "description": `A standard event calendar in the ${themeTitle} theme-flavor`,
     "dependencies": [
-      "@fullcalendar/react@^7.1.3",
+      "@fullcalendar/react@^7.1.4",
       "lucide-react",
       "temporal-polyfill@^1.0.1"
     ],
@@ -145,8 +145,8 @@ async function createSchedulerConfig(theme: string, themeTitle: string) {
     "title": `Scheduler (${themeTitle})`,
     "description": `A premium event scheduler in the ${themeTitle} theme-flavor`,
     "dependencies": [
-      "@fullcalendar/react@^7.1.3",
-      "@fullcalendar/react-scheduler@^7.1.3",
+      "@fullcalendar/react@^7.1.4",
+      "@fullcalendar/react-scheduler@^7.1.4",
       "lucide-react",
       "temporal-polyfill@^1.0.1"
     ],

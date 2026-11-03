@@ -13,7 +13,7 @@
     "clean": "rm -rf build .cache node_modules/.vite"
   },
   "dependencies": {
-    "@fullcalendar/react": "^7.1.3",
+    "@fullcalendar/react": "^7.1.4",
     "@remix-run/node": "^2.17.4",
     "@remix-run/react": "^2.17.4",
     "@remix-run/serve": "^2.17.4",
