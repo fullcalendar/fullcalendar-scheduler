@@ -21,7 +21,7 @@
     "@fullcalendar/react": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "devDependencies": {
     "@fullcalendar/react": "workspace:*",
@@ -37,6 +37,6 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "~5.7.2",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   }
 }

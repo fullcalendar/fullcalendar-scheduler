@@ -6,7 +6,7 @@
   "dependencies": {
     "@fullcalendar/vue3": "^7.1.4",
     "@fullcalendar/vue3-scheduler": "^7.1.4",
-    "temporal-polyfill": "^1.0.1",
+    "temporal-polyfill": "^1.0.7",
     "vue": "^3.2.45"
   },
   "dependenciesMeta": {

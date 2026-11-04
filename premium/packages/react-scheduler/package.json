@@ -12,7 +12,7 @@
     "@fullcalendar/react": "workspace:7.1.4",
     "react": "^17 || ^18 || ^19",
     "react-dom": "^17 || ^18 || ^19",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "devDependencies": {
     "@fullcalendar/react": "workspace:7.1.4",
@@ -23,7 +23,7 @@
     "jsdom": "^27.4.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "temporal-polyfill": "^1.0.1",
+    "temporal-polyfill": "^1.0.7",
     "vitest": "^4.0.16"
   },
   "scripts": {

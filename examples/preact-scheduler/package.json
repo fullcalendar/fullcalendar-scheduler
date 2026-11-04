@@ -16,7 +16,7 @@
     "@fullcalendar/preact": "^7.1.4",
     "@fullcalendar/preact-scheduler": "^7.1.4",
     "preact": "^10.29.8",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "dependenciesMeta": {
     "@fullcalendar/preact": {

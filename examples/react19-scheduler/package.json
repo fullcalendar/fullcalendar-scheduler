@@ -17,7 +17,7 @@
     "@fullcalendar/react-scheduler": "^7.1.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "dependenciesMeta": {
     "@fullcalendar/react": {

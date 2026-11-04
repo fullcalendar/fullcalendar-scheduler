@@ -21,7 +21,7 @@
     "react-dom": "^19.2.3",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.2.2",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

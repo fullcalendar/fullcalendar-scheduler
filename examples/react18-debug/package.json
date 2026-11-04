@@ -13,7 +13,7 @@
     "@fullcalendar/react": "^7.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "dependenciesMeta": {
     "@fullcalendar/react": {

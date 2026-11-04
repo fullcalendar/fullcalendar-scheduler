@@ -17,7 +17,7 @@
     "fullcalendar-scheduler-w-react": "workspace:*",
     "fullcalendar-w-react": "workspace:*",
     "retry-cli": "^0.7.0",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "scripts": {
     "build": "standard-scripts pkg:build",

@@ -13,6 +13,6 @@
   "dependencies": {
     "@fullcalendar/vue3": "^7.1.4",
     "nuxt": "^3.3.1",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   }
 }

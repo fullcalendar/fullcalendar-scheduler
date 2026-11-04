@@ -18,7 +18,7 @@
     "@mui/material": "^7.3.8",
     "react": "^19.0.4",
     "react-dom": "^19.0.4",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "dependenciesMeta": {
     "@fullcalendar/react": {

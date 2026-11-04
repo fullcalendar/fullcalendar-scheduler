@@ -14,7 +14,7 @@
   "dependencies": {
     "fullcalendar": "^7.1.4",
     "fullcalendar-scheduler": "^7.1.4",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   },
   "dependenciesMeta": {
     "fullcalendar": {

@@ -56,7 +56,7 @@
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.2.2",
     "tw-animate-css": "^1.3.4",
-    "temporal-polyfill": "^1.0.1",
+    "temporal-polyfill": "^1.0.7",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.34.1",
     "vite": "^7.0.1"

@@ -23,7 +23,7 @@
     "@fullcalendar/angular": "^7.1.4",
     "fullcalendar": "^7.1.4",
     "rxjs": "~7.8.0",
-    "temporal-polyfill": "^1.0.1",
+    "temporal-polyfill": "^1.0.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },

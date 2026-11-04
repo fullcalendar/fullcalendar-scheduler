@@ -29,6 +29,6 @@
     "@fullcalendar/react": "workspace:*",
     "@fullcalendar/react-scheduler": "workspace:*",
     "typescript": "~5.7.2",
-    "temporal-polyfill": "^1.0.1"
+    "temporal-polyfill": "^1.0.7"
   }
 }
