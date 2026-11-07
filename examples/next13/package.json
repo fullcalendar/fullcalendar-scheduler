@@ -13,7 +13,7 @@
     "@fullcalendar/react": "^7.1.4",
     "@fullcalendar/react-scheduler": "^7.1.4",
     "@next/font": "13.2.3",
-    "next": "13.2.3",
+    "next": "15.5.18",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "temporal-polyfill": "^1.0.7"
